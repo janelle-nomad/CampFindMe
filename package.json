@@ -1,0 +1,23 @@
+{
+  "name": "campfindme",
+  "version": "0.0.0",
+  "description": "CampFindMe is a web app that lists campsites around the world (potentially), allows users to log in and register a campsite",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janelle-nomad/CampFindMe.git"
+  },
+  "author": "Janelle Heron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janelle-nomad/CampFindMe/issues"
+  },
+  "homepage": "https://github.com/janelle-nomad/CampFindMe#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
