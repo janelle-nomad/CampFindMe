@@ -4,15 +4,21 @@ CampFindMe is a web app that lists campsites around the world (potentially), all
 
 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Create a directory 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-Create a package.json
-npm init 
+Install Express framework, & EJS
 
-Install express, ejs
+npm command:
 npm install express ejs --save
+
+To install packages from package.json, run:
+npm init
+
+To start the app, run: 
+node app.js
+
+*See deployment for notes on how to deploy the project on a live system.
 
 Prerequisites
 
@@ -38,13 +44,13 @@ Download the zip file from github.com
 
 Extract to a seperate folder
 Create or move the .zip folder to a folder of your choosing (preferably an empty folder)
+
 right-click the .zip folder and click on extract
 
-Deployment
+open the terminal/command prompt, and enter
+node app.js
 
-Heroku
-
-Add additional notes about how to deploy this on a live system
+Deployment, will be covered once the app is near completion
 
 Built With:
 
@@ -58,9 +64,4 @@ Version
 
 Authors
 
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-
-This project is licensed under the MIT License
+Janelle Heron
