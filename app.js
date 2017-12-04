@@ -18,12 +18,13 @@ app.get("/", function(req, res) {
     res.render("landing");
 });
 
-//show all the campgrounds that the web app has
+//shows all the campgrounds that the web app contains within its database
 app.get("/campgrounds", function(req, res) {
 
     res.render("campgrounds", {campgrounds:campgrounds}); //data passing in to campgrounds
 });
 
+//Allows users to create their own campgrounds
 app.post("/campgrounds", function(req, res) {
     //get data from form, and add to campgrounds array
     var name = req.body.name;
@@ -31,9 +32,10 @@ app.post("/campgrounds", function(req, res) {
     var newCampground = {name: name, image: image} //campground object
     campgrounds.push(newCampground);
     //redirect back to campgrounds page
-    res.redirect("/campgrounds"); //defaults to a get request
+    res.redirect("/campgrounds");
 });
 
+//Shows the campground form - submits a POST req to campgrounds
 app.get("/campgrounds/new", function(req, res) {
     res.render("new.ejs");
 })
